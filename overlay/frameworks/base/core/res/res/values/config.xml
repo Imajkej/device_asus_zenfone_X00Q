@@ -1053,4 +1053,5 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
      -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -218,0 L -218,87 L 218,87 L 218,0 Z</string>
 </resources>
