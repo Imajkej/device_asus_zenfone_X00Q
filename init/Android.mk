@@ -24,7 +24,7 @@ LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
 LOCAL_CPPFLAGS := -Wall
-LOCAL_SRC_FILES := init_X00T.cpp
-LOCAL_MODULE := libinit_X00T
+LOCAL_SRC_FILES := init_X00Q.cpp
+LOCAL_MODULE := libinit_X00Q
 
 include $(BUILD_STATIC_LIBRARY)

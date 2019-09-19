@@ -19,7 +19,7 @@
 set -e
 
 # Required!
-DEVICE=X00T
+DEVICE=X00Q
 VENDOR=asus
 
 INITIAL_COPYRIGHT_YEAR=2018
@@ -30,7 +30,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 LINEAGE_ROOT="${MY_DIR}/../../.."
 
-HELPER="${LINEAGE_ROOT}/vendor/havoc/build/tools/extract_utils.sh"
+HELPER="${LINEAGE_ROOT}/vendor/aicp/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1

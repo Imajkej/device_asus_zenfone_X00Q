@@ -20,21 +20,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Havoc stuff
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/aicp/config/common.mk)
 
-# Inherit from X00T device
+# Inherit from X00Q device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := asus
-PRODUCT_DEVICE := X00T
+PRODUCT_DEVICE := X00Q
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := havoc_X00T
+PRODUCT_NAME := aicp_X00Q
 PRODUCT_MODEL := ZenFone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 TARGET_VENDOR := asus
-TARGET_VENDOR_PRODUCT_NAME := X00T
+TARGET_VENDOR_PRODUCT_NAME := X00Q
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1 1181 release-keys"
@@ -44,4 +44,4 @@ BUILD_FINGERPRINT := Android/sdm660_64/sdm660_64:9/PKQ1/16.2017.1905.053-2019051
 
 HAVOC_BUILD_TYPE := Official
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=rizkybenggolo
+    ro.aicp.maintainer=rizkybenggolo

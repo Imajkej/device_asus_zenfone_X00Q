@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_X00T.mk
+    $(LOCAL_DIR)/aicp_X00Q.mk

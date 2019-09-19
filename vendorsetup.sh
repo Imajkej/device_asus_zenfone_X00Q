@@ -1,3 +1,3 @@
-add_lunch_combo havoc_X00T-userdebug
-add_lunch_combo havoc_X00T-user
-add_lunch_combo havoc_X00T-eng
+add_lunch_combo aicp_X00Q-userdebug
+add_lunch_combo aicp_X00Q-user
+add_lunch_combo aicp_X00Q-eng

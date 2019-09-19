@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 
 # AR CONFIG
 PRODUCT_COPY_FILES += \
-   device/asus/X00T/configs/android.hardware.camera.ar.xml:vendor/etc/permissions/android.hardware.camera.ar.xml
+   device/asus/X00Q/configs/android.hardware.camera.ar.xml:vendor/etc/permissions/android.hardware.camera.ar.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -391,7 +391,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_X00T
+    librecovery_updater_X00Q
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -467,7 +467,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-	android.hardware.usb@1.0-service.X00T
+	android.hardware.usb@1.0-service.X00Q
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -519,4 +519,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ZenfoneParts
 
-$(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
+$(call inherit-product, vendor/asus/X00Q/X00Q-vendor.mk)
