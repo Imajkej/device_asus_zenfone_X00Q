@@ -112,31 +112,4 @@ $(BT_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(BT_FIRMWARE_SYMLINKS)
 
-# libtinycompress symlink for audio hal
-TINYCOMPRESS_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libtinycompress_vendor.so
-$(TINYCOMPRESS_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "libtinycompress shared object link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf libtinycompress.so $@
-
-TINYCOMPRESS64_SYMLINK := $(TARGET_OUT_VENDOR)/lib64/libtinycompress_vendor.so
-$(TINYCOMPRESS64_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "libtinycompress_64 shared object link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf libtinycompress.so $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(TINYCOMPRESS_SYMLINK) $(TINYCOMPRESS64_SYMLINK)
-
-SNAP_LIBS := libarcsoft_beautyshot.so libarcsoft_night_shot.so libc++.so libjni_hq_beautyshot.so libjni_hq_night_shot.so libjni_imageutil.so libjni_snapcammosaic.so libjni_snapcamtinyplanet.so libmpbase.so
-SNAP_SYMLINKS := $(addprefix $(TARGET_OUT_APPS_PRIVILEGED)/Snapcam/lib/arm64/,$(notdir $(SNAP_LIBS)))
-$(SNAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "SNAP lib link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /system/lib64/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(SNAP_SYMLINKS)
-
 endif

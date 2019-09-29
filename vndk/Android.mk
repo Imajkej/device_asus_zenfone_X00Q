@@ -4,11 +4,8 @@ ifndef BOARD_VNDK_VERSION
 
 VNDK_SP_LIBRARIES := \
     libdexfile \
-    libartbase \
-    libziparchive
-
-install_in_hw_dir := \
-   android.hidl.memory@1.0-impl
+    libpng \
+    libft2
 
 ifdef PLATFORM_VNDK_VERSION
 vndk_sp_dir := vndk-sp-$(PLATFORM_VNDK_VERSION)

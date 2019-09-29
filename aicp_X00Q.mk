@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Havoc stuff
+# Inherit some common DOT OS stuff
 $(call inherit-product, vendor/aicp/config/common.mk)
 
 # Inherit from X00Q device
@@ -30,6 +30,7 @@ PRODUCT_DEVICE := X00Q
 PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := aicp_X00Q
 PRODUCT_MODEL := ZenFone Max Pro M1
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
@@ -41,7 +42,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Android/sdm660_64/sdm660_64:9/PKQ1/16.2017.1905.053-20190513:user/release-keys
-
-HAVOC_BUILD_TYPE := Official
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.aicp.maintainer=rizkybenggolo

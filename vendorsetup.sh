@@ -1,3 +1,2 @@
 add_lunch_combo aicp_X00Q-userdebug
-add_lunch_combo aicp_X00Q-user
 add_lunch_combo aicp_X00Q-eng
