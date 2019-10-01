@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common DOT OS stuff
-$(call inherit-product, vendor/aicp/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Inherit from X00Q device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,8 +28,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00Q
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := aicp_X00Q
-PRODUCT_MODEL := ZenFone Max Pro M1
+PRODUCT_NAME := lineage_X00Q
+PRODUCT_MODEL := ZenFone 5 2018
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
@@ -41,4 +41,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1 1181 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Android/sdm660_64/sdm660_64:9/PKQ1/16.2017.1905.053-20190513:user/release-keys
+BUILD_FINGERPRINT := asus/WW_Phone/ASUS_X00QD:9/PPR1.180610.009/16.0615.1908.109-0:user/release-key

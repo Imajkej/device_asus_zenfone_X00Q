@@ -1,2 +1,2 @@
-add_lunch_combo aicp_X00Q-userdebug
-add_lunch_combo aicp_X00Q-eng
+add_lunch_combo lineage_X00Q-userdebug
+add_lunch_combo lineage_X00Q-eng

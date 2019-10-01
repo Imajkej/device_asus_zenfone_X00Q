@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_X00Q.mk
+    $(LOCAL_DIR)/lineage_X00Q.mk
