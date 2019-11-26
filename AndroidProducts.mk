@@ -18,6 +18,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_X00Q.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X00Q-user \
-    lineage_X00Q-userdebug \
-    lineage_X00Q-eng
+    lineage_X00Q-userdebug

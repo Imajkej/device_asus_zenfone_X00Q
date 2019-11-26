@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common DOT OS stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit some common Havoc stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X00Q device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,8 +29,7 @@ PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00Q
 PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := lineage_X00Q
-PRODUCT_MODEL := ZenFone 5 2018
-TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_MODEL := ZenFone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
@@ -38,7 +37,11 @@ TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00Q
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1 1181 release-keys"
+    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.021 4565141 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := asus/WW_Phone/ASUS_X00QD:9/PPR1.180610.009/16.0615.1908.109-0:user/release-key
+BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.021/4565141:user/release-keys
+
+HAVOC_BUILD_TYPE := Official
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.maintainer=rizkybenggolo

@@ -55,6 +55,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/dpl_ctrl             0660   usb        usb
 /dev/ipa_odl_ctl          0660   radio      radio
 /dev/ipa_adpl             0660   system     oem_2905
+/dev/hab                  0666   system     system
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
@@ -153,14 +154,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/mhi_qdss             0660   system    oem_2902
 /sys/class/qdss_bridge/mhi_qdss  mode      0660     system   oem_2902
 
-/* Huaqin modify for ZQL1650-143 by wangxiang at 2018/01/23 start */
 # fingerprint
-/dev/fpsdev0              0666   system     system
-/* Huaqin modify for ZQL1650-143 by wangxiang at 2018/01/23 end */
-
-/* Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end */
-/dev/goodix_fp            0666   system     system
-/* Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end */
+/dev/fpsdev0              0660   system     system
+/dev/goodix_fp            0660   system     system
 
 # wlan
 /dev/wcnss_wlan           0660   system     system
@@ -266,6 +262,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/a98000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660 system drmrpc
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch          0440 system drmrpc
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660 system drmrpc
+
+# GNSS Device premissions
+/dev/gnss_sirf             0660   gps     gps
 
 # native sensors input
 /sys/devices/virtual/input/input*   enable_int       0660  system   input
